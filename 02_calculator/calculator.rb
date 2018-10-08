@@ -15,18 +15,24 @@ def sum (tab)
 	return count
 end	
 
+
+
 def multiply (a,b) 
 	a*b
-end 
-	5 * 5 
-end
-	8 * 0
 end	
 
-def power
-	2**5
+
+
+def power(a,b)
+	a**b
 end	
- 
-def factorial(a) 
-	a!
-end	
+
+
+
+def factorial(n)
+  if n<= 1
+    1
+  else
+    n * factorial( n - 1 )
+  end
+end
