@@ -1,29 +1,9 @@
-# #write your code here
-# def translate (str)
-#   alpha = ('a'..'z').to_a
-#   voyelles = %w[a e i o u]
-#   consonants = alpha - voyelles
-
-#   if voyelles.include?(str[0])
-#     str + 'ay'
-#   elsif consonants.include?(str[0]) && consonants.include?(str[1])
-#     str[2..-1] + str[0..1] + 'ay'
-#   elsif consonants.include?(str[0])
-#     str[1..-1] + str[0] + 'ay'
-#   elsif vowel?(first_letter=word[0].downcase)
-#         word + 'ay' &&
-  	
-#   	vowel?(last_letter=word[-1].downcase)
-#         move_last_letter(word) + 'ay'
-  
-#   end
-# end	
 
 def translate(str)
     str = str.downcase
     voyelles = ['a', 'e', 'i', 'o', 'u']
     word = str.split(' ')
-  tab_result = []
+    tab_result = []
 
 word.each_with_index do |word, i|
     traduc = ''
